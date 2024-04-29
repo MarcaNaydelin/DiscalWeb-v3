@@ -1,0 +1,154 @@
+/* Contenedor principal */
+.App {
+  text-align: center; /* Alinear el contenido al centro */
+  color: #fff; /* Establecer el color de texto a blanco */
+  display: flex; /* Usar flexbox para la distribución */
+  flex-direction: column; /* Distribuir en columna */
+  align-items: center; /* Alinear verticalmente */
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Header principal */
+.header {
+  padding: 20px 0; /* Espaciado interno */
+  display: flex; /* Usar flexbox para la distribución */
+  align-items: center; /* Alinear verticalmente */
+  color: #fff; /* Color de texto para el header */
+  padding-top: 100px; /* Ajusta el espacio para que no se superponga con el nav y el logo */
+}
+.img-size{ /*img1*/
+  width: 28em; /* Ancho deseado */
+  height: auto;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+.header-content {
+  flex-direction: column;
+}
+/* Contenedor de información */
+.header-info {
+  display: flex; /* Usar flexbox para la distribución */
+  flex-direction: column; /* Distribuir en columna */
+  align-items: flex-start; /* Alinear a la izquierda */
+  margin-right: 10em; /* Margen derecho */
+}
+.header-info h1 {
+  font-size: 90px; /* Tamaño de la fuente del título */
+  margin-bottom: 15px; /* Margen inferior del título */
+}
+.header-info p {
+  font-size: 25px; /* Tamaño de la fuente del subtítulo */
+  line-height: 1.6; /* Altura de línea del subtítulo */
+  max-width: 500px; /* Ancho máximo del subtítulo */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+/* Botón de registro */
+.header-registro {
+  margin-top: 20px; /* Margen superior */
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  margin-right: 10px; /* Ajusta el margen derecho */
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+.btn-registro {
+  display: inline-block;
+  background-color: rgba(170, 177, 255, 0.3);
+  border: 1px solid beige;
+  margin: 35px 10px 0px 0px;
+  padding: 10px 20px;
+  color: beige;
+  text-decoration: none;
+  border-radius: 25px; /* Agrega borde redondeado */
+  margin-top: 1px;
+}
+.btn-registro:hover{
+  background-color: mediumpurple;
+  color: beige;
+}
+/*_________________________________HELP________________________________*/
+.help-container{
+  padding: 80px 0px;
+  text-align: center;
+  color: beige;
+}
+.help-content{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.help-content H2{
+  font-size: 40px; /* Cambia el tamaño del texto */
+  margin-bottom: 20px;
+}
+.help-content P{
+  font-size: 22px; /* Cambia el tamaño del texto */
+  line-height: 1.6;
+}
+/*________________________________________SERVICES_________________________________________*/
+.services-container{
+  padding: 80px 0px;
+  text-align: center;
+  color: beige;
+}
+.service-content{
+  display: flex;
+  flex-wrap: nowrap; /* Evita que los servicios se envuelvan */
+  justify-content: center;
+  gap: 10px;
+}
+.services {
+  width: 300px; /* Ancho deseado para cada servicio */
+  padding: 25px;
+  margin: 0px 10px;
+  box-shadow: 0px 0px 20px rgba(135, 141, 214, 0.3);
+}
+/*________________________________________INFORMATION_________________________________________*/
+.info-container{
+  padding: 80px 0px;
+  text-align: center;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+}
+.info-container h2{
+  font-size: 60px; /* Cambia el tamaño del texto */
+  margin-bottom: 30px;
+}
+.information-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info-1, .info-2{
+  text-align: left;
+  margin-left: 100px;
+  max-width: 550px; /* Aumenta el ancho máximo del texto */
+  margin-bottom: 30px; /* Espacio entre cada componente */
+}
+
+/* Alineación de los componentes según el índice */
+.information-list .info-1:nth-child(odd),
+.information-list .info-2:nth-child(even) {
+  margin-right: auto; /* Alinea a la izquierda */
+}
+.information-list .info-1:nth-child(even),
+.information-list .info-2:nth-child(odd) {
+  margin-left: auto; /* Alinea a la derecha */
+}
+
+.info-1, .info-2 h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.info-1, .info-2 p{
+  font-size: 22px; /* Cambia el tamaño del texto */
+  margin-bottom: 25px;
+  line-height: 1.5;/* Ajusta el espacio entre líneas del texto */
+}
+/* Agrega estilos para la animación de hover */
+.Information:hover {
+  box-shadow: 0px 0px 30px rgba(135, 141, 214, 0.6);
+  transform: translateY(-5px);
+}
+/*________________________________________FOOTER_________________________________________*/
