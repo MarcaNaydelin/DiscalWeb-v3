@@ -26,7 +26,7 @@ function App() {
             </p>
           </div>
           <div className="header-registro">
-            <a href="registro.html" className="btn-registro">
+            <a href="registro.html" className="btn">
               Registro
             </a>
           </div>
@@ -105,7 +105,30 @@ function App() {
           ></Information>
         </div>
       </section>
-      <footer></footer>
+      <footer>
+        <div className="contacto-container">
+          <div className="contacto-content">
+            <div className="contacto">
+              <h2>Contactanos</h2>
+              <p>Universidad privada franz tamayo</p>
+              <p>Si tienes alguna pregunta o sugerencia, no dudes en contactarnos a través de los siguientes medios:</p>
+              <p>Email: naydelingirl1234@gmail.com</p>
+              <p>Telefono: +591 68526105</p>
+            </div>
+            <div className="ubicacion">
+              <h2>Nos Ubicamos</h2> 
+              <p>Calle: Av. Villarroel esq. c. Portales, No. 359</p>
+              <p>Ciudad: Cochabamba</p>
+              <p>Departamento: Cochabamba</p>
+              <p>País: Bolivia</p>
+              <a href="https://unifranz.edu.bo/sedes/cochabamba/" class="btn"> Mas Informacion</a>
+            </div>
+          </div>
+          <div class = "pieDEpagina">
+            <h3>© 2024 Proyecto de Enseñanza con Juegos Interactivos - Naydelin Marca Paco</h3>
+          </div>  
+        </div>
+      </footer>
     </div>
   );
 }
